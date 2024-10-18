@@ -1,0 +1,107 @@
+﻿html, body {
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/security.jpg'); /* Utilise le chemin relatif si le fichier CSS est dans un sous-dossier */
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond blanc avec transparence */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centre le texte */
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre les éléments verticalement */
+}
+
+body {
+    display: flex; /* Utilise flexbox pour centrer le conteneur */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+
+h1 {
+    color: #007bff; /* Couleur du titre NETSAFE */
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333; /* Couleur du sous-titre */
+    margin-bottom: 15px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    background-color: #007bff; /* Couleur primaire */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+    .toggle-btn:hover {
+        background-color: #0056b3; /* Couleur au survol */
+    }
+
+.form-section {
+    transition: opacity 0.5s ease-in-out;
+}
+
+h3 {
+    color: #333; /* Couleur du titre de section */
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Aligne les étiquettes à gauche */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Couleur primaire */
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+    .btn:hover {
+        background-color: #0056b3; /* Couleur au survol */
+    }
+
+
+
+

@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMenu.master.cs" Inherits="NETSAFE.MainMenu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+        <title>PowerBank</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <link href="master/style.css" rel="stylesheet" type="text/css"/ >
+    <link rel="icon" href="master/Logo.ico" type="image/x-icon"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <form id="form1" runat="server">
+      <div class="div-block-main">
+         <div class="div-block-5-main">
+             <asp:Image ID="profileImage" src="master/Logo.jpg"  runat="server" loading="lazy" alt="" class="imageProfile"/>
+            <div class="text-block-main">
+                <asp:Label ID="fName" runat="server" Text="Label"></asp:Label></div>
+            <div class="text-block-2-main"><asp:Label ID="lName" runat="server" Text="Label"></asp:Label></div>
+         </div>
+         <div class="div-block-6-main"></div>
+         <div  class="sidebar-body">
+            <ul id="div" runat="server" class="sidebar-body-menu">
+               <li>
+                  <a class="show-cat-btn-ov" href="Acceuil.aspx"><span class="icon home" aria-hidden="true"></span>Acceuil</a>
+               </li>
+               <li>
+                  <a class="show-cat-btn-tr" href="Guide.aspx">
+                  <span class="icon paper" aria-hidden="true"></span>Guide
+                  </a>
+               </li>
+               <li>
+                  <a class="show-cat-btn-contacts" href="MenuQuiz.aspx">
+                  <span class="icon user-3" aria-hidden="true"></span>Quiz
+                  </a>
+               </li>
+               <li>
+                  <a class="show-cat-btn-profile" href="Profile.aspx">
+                  <span class="icon edit" aria-hidden="true"></span>Profile
+                  </a>
+               </li>
+                </ul>
+             <ul class="sidebar-body-menu">
+               <li>
+                   <asp:LinkButton ID="LinkButton1" OnClick="Logout_OnClick" runat="server">LogOut</asp:LinkButton>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="div-block-3-main">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+      
+    </form>
+</body>
+</html>
